@@ -27,7 +27,13 @@ $ npm install
 ```
 $ npm start
 ```
-Com o server online, basta acessar http://localhost:3000/status para receber o status do servidor. Para testar a rota /scrap_product, faça um post na url http://localhost:3000/scrap_product e envie no corpo da requisição o parâmetro "url" contendo a url do produto desejado (utilizei o Postman para testar as requisições).
+Com o server online, basta acessar http://localhost:3000/status para receber o status do servidor. Para testar a rota /scrap_product, faça um post na url http://localhost:3000/scrap_product e envie no corpo da requisição um JSON seguindo o exemplo abaixo:
+
+```
+{
+    "url":"url_do_produto"
+}
+```
 
 **Tecnologias utilizadas**
 - [Node](https://nodejs.org/) - Node e Npm
